@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "arrayPush",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"6_ArrayAndStruct.sol": "ArrayTypes"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"6_ArrayAndStruct.sol": {
+			"keccak256": "0x4fad37397b13dbd5cdfa90e952ddf0034a547cc70a19b2773b31e1fe234967cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6fc85187e76178769e8d5d0c9856ef1f64d00e5f6038bfaefc6e8686513e72ac",
+				"dweb:/ipfs/QmcprGj1ANFR36XKLqM7Bqs2MjhwMc5SMpqfUcqJCi7HBS"
+			]
+		}
+	},
+	"version": 1
+}
