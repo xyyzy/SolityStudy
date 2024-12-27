@@ -1,0 +1,143 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferETH",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdrawFromFailList",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"multiTransferToken(address,address[],uint256[])": {
+					"params": {
+						"_addresses": "空投地址数组",
+						"_amounts": "代币数量数组（每个地址的空投数量）",
+						"_token": "转账的ERC20代币地址"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multiTransferETH(address[],uint256[])": {
+					"notice": "向多个地址转账ETH"
+				},
+				"multiTransferToken(address,address[],uint256[])": {
+					"notice": "向多个地址转账ERC20代币，使用前需要先授权"
+				}
+			},
+			"notice": "向多个地址转账ERC20代币",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"33_Airdrop/Airdrop.sol": "Airdrop"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"33_Airdrop/Airdrop.sol": {
+			"keccak256": "0x44279610bce384d72f02a00487b64f337ded179fd181dcd597e9127df3762b5f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://72090598bbcc5640d6c0d8d7ae4b387c1afef45e6de82da1bb8202717d51449e",
+				"dweb:/ipfs/QmYekMj5oP665U4Ssiry2vH6FL3N2oCM1udihVKFUmRtqm"
+			]
+		},
+		"33_Airdrop/IERC20.sol": {
+			"keccak256": "0x7fb2b0291b9aa91dad67b1e2df28db896882d0b137277600f1a2bb989bcc9698",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8492c994518b65bdfdee39bc983077fb6bedc1e69bc93a561a05f9025b69a39b",
+				"dweb:/ipfs/QmdLcX3jtiU6M4zDTpy9q6zBh4Uqn6BX33MRsV91cieb61"
+			]
+		}
+	},
+	"version": 1
+}
