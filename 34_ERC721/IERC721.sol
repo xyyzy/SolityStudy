@@ -3,27 +3,16 @@ pragma solidity ^0.8.21;
 import "./IERC165.sol";
 
 interface IERC721 is IERC165 {
-    event Transfer(
-        address indexed from,
-        address indexed to,
-        uint256 indexed tokenId
-    );
+    
+    event Transfer(address indexed from, address indexed to,uint256 indexed  tokenId);
 
-    event Approval(
-        address indexed owner,
-        address indexed approved,
-        uint256 indexed tokenId
-    );
+    event Approval(address indexed owner, address indexed approved,uint256 indexed tokenId);
 
-    event ApprovalAll(
-        address indexed owner,
-        address indexed aperator,
-        bool approved
-    );
+    event ApprovalAll(address indexed owner,address indexed aperator,bool approved);
 
-    function balanceOf(address owner) external view returns (uint256 balance);
+    function balanceOf(address owner) external view  returns(uint256 balance);
 
-    function ownerOf(uint256 tokendId) external view returns (address owner);
+    function owner(uint256 tokendId) external view returns (address owner);
 
     function safeTransferFrom(
         address from,
@@ -36,15 +25,8 @@ interface IERC721 is IERC165 {
         address from,
         address to,
         uint256 tokenId
-    ) external;
+    )external;
 
-    function transferFrom(address from, address to, uint256 tokenId) external;
+    function 
 
-    function approve(address to, uint256 tokenId) external;
-
-    function getApprovalForAll(address operator, bool _operator) external;
-
-    function getApproved(uint256 tokenId) external view returns (address operator);
-
-    function isApprovedForAll(address owner,address operator) external view returns (bool);
 }
