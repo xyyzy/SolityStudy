@@ -5,7 +5,7 @@ pragma solidity ^0.8.21;
 import "./IERC165.sol";
 import "./IERC721.sol";
 import "./IERC721Receiver.sol";
-import "./IERC721Metadata.sol";
+import "./IERC721MetaData.sol";
 import "./String.sol";
 
 contract ERC721 is IERC721, IERC721Metadata{
